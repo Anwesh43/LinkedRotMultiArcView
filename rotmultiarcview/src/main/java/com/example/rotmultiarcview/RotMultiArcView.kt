@@ -59,7 +59,8 @@ fun Canvas.drawRMANode(i : Int, scale : Float, paint : Paint) {
     paint.color = colors[i]
     paint.strokeCap = Paint.Cap.ROUND
     paint.strokeWidth = Math.min(w, h) / strokeFactor
-    drawRMANode(i, scale, paint)
+    paint.style = Paint.Style.STROKE
+    drawRotMultiArc(scale, w, h, paint)
 }
 
 class RotMultiArcView(ctx : Context) : View(ctx) {
