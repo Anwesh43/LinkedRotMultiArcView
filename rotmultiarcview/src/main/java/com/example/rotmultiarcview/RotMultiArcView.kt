@@ -212,5 +212,13 @@ class RotMultiArcView(ctx : Context) : View(ctx) {
         }
     }
 
+    companion object {
+
+        fun create(activity : Activity) : RotMultiArcView {
+            val view : RotMultiArcView = RotMultiArcView(activity)
+            activity.setContentView(view)
+            return view
+        }
+    }
 
 }
