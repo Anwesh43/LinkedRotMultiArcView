@@ -1,0 +1,3 @@
+include ':rotmultiarcview'
+include ':app'
+rootProject.name = "LinkedRotMultiArcView"
